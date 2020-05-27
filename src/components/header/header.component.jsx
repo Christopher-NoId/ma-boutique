@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 //connect nous permet de modifier notre composant afin qu'il ait accès
 // à la bibli redux
 
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { auth } from "../../firebase/firebase.utils";
+import { selectCartHidden } from "../../redux/cart/cart.selecteurs";
+import { selectCurrentUser } from "../../redux/user/user.selecteurs";
+
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 import "./header.styles.scss";
 //le header qui sera toujours fixé à la page visitée
@@ -39,9 +43,9 @@ const Header = ({ currentUser, hidden }) => (
 	</div>
 );
 
-const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
-	currentUser,
-	hidden // on veut le root reducer, dans ce root reducer
+const mapStateToProps = createStructuredSelector({
+	currentUser: selectCurrentUser,
+	hidden: selectCartHidden // on veut le root reducer, dans ce root reducer
 	//on veut la valeur de user, qui nous donne userReducer, dont on veut currentUser
 });
 

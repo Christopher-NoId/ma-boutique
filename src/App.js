@@ -1,14 +1,19 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import CheckoutPage from './pages/checkout/checkout.component';
+
+
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user-actions'
+import { selectCurrentUser } from './redux/user/user.selecteurs';
 
 
 //Quand un user se log on veut conserver on veut stocker l'état son statut
@@ -52,7 +57,9 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route path='/shop' component={ShopPage} />
+          <Route path='/boutique' component={ShopPage} />
+          <Route exact path='/panier' component={CheckoutPage} />
+
           <Route
             exact
             path='/signin'
@@ -71,9 +78,9 @@ class App extends React.Component {
 
 }
 
-const mapStateToProps = ({ user }) => ({
+const mapStateToProps = createStructuredSelector({
 
-  currentUser: user.currentUser
+  currentUser: selectCurrentUser
 })
 const mapDispatchToProps = dispatch => ({
   //on dispatch  l'action SET_CURRENT_USER
