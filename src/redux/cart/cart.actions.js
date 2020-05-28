@@ -9,4 +9,17 @@ export const addItem = item => ({
 
   type: CartActionTypes.ADD_ITEM,
   payload: item
+});
+
+export const removeItem = item => ({
+  type: CartActionTypes.REMOVE_ITEM,
+  payload: item
+  //on modifie ensuite le reducer
+})
+
+export const clearItemFromCart = item => ({
+
+  type: CartActionTypes.CLEAR_ITEM_FROM_CART,
+  payload: item
+  //on update le reducer afin qu'il supprime le bon item de l'array
 })
