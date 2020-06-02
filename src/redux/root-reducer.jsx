@@ -1,12 +1,22 @@
-//fonction qui détermine les changements de state dans notre appli
-//représente tous les state de notre appli
+//ce fichier  un objet représentant tous les state de notre application
 
 import { combineReducers } from "redux";
+import { persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 
 import userReducer from "./user/user-reducer";
 import cartReducer from "./cart/cart.reducer";
 
-export default combineReducers({
+const persistConfig = {
+	key: "root",
+	storage,
+	whitelist: [ "cart" ]
+	//le seul reducer en whitelist est cart
+};
+
+const rootReducer = combineReducers({
 	user: userReducer,
 	cart: cartReducer
 });
+
+export default persistReducer(persistConfig, rootReducer);
