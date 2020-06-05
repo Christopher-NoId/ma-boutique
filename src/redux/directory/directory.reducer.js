@@ -7,14 +7,14 @@ const INITIAL_STATE = {
       imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Blu_ray_logo.png",
       size: "large",
       id: 4,
-      linkUrl: "hats"
+      linkUrl: "boutique/bluray"
     },
     {
       title: "Bande Dessinée",
       imageUrl: "https://pngimage.net/wp-content/uploads/2018/05/bande-dessin%C3%A9e-png-6.png",
       size: "large",
       id: 5,
-      linkUrl: ""
+      linkUrl: "boutique/bd"
     }
   ]
 }
