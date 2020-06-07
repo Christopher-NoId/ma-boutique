@@ -1,17 +1,19 @@
 import { createSelector } from 'reselect';
 
-const COLLECTION_ID_MAP = {
+//const COLLECTION_ID_MAP = {
 
-  bluray: 1,
-  bd: 2
-}
-
+//  bluray: 1,
+//  bd: 2
+//}
 const selectShop = state => state.shop;
 
 export const selectCollections = createSelector(
   [selectShop],
   shop => shop.collections
 );
+
+
+
 
 export const selectCollectionsForPreview = createSelector(
   [selectCollections],

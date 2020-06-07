@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  bluray: {
     id: 1,
     title: "Blu-Ray",
     routeName: "bluray",
@@ -37,8 +37,8 @@ const SHOP_DATA = [
       {
         id: 6,
         name: "A history of violence",
-        imageUrl: "https://static.fnac-static.com/multimedia/FR/images_produits/FR/Fnac.com/ZoomPE/8/5/6/8717418159658/tsp20130828173933/Incaable-Edition-Blu-Ray.jpg",
-        price: 14
+        imageUrl: "https://static.fnac-static.com/multimedia/images_produits/ZoomPE/0/2/1/3512391450120/tsp20130902110602/A-History-of-violence-Blu-Ray.jpg",
+        price: 19.71
       },
       {
         id: 7,
@@ -57,12 +57,91 @@ const SHOP_DATA = [
         name: "La la land",
         imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/84/fc/82/8584324/1507-1/tsp20170516152952/La-La-Land-Blu-ray.jpg",
         price: 16
-      }
+      },
+
+      {
+        id: 10,
+        name: "1917",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/40/bc/b2/11713600/1507-1/tsp20200206125057/1917-Steelbook-Edition-Speciale-Fnac-Blu-ray.jpg",
+        price: 22.99
+      },
+
+      {
+        id: 11,
+        name: "Joker",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/ba/b3/ae/11449274/1507-1/tsp20200106160132/Joker-Blu-ray.jpg",
+        price: 20
+      },
+
+      {
+        id: 12,
+        name: "Ad Astra",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/91/2a/ae/11414161/1507-1/tsp20191113154825/Ad-Astra-Blu-ray.jpg",
+        price: 24.99
+      },
+
+      {
+        id: 13,
+        name: "Once Upon a Time in...Hollywood",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/8e/f6/ac/11335310/1507-1/tsp20191104160709/Once-Upon-a-Time-in-Hollywood-Blu-ray.jpg",
+        price: 25
+      },
+
+      {
+        id: 14,
+        name: "Spider-Man : Far From Home",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/26/9d/ab/11246886/1507-1/tsp20191008111112/Spider-Man-Far-From-Home-Blu-ray.jpg",
+        price: 20
+      },
+
+      {
+        id: 15,
+        name: "Dernier train pour Busan ",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/e6/f9/81/8518118/1507-1/tsp20170112172907/Dernier-train-pour-Busan-Blu-ray.jpg",
+        price: 15
+      },
+
+      {
+        id: 16,
+        name: "The Dark Knight La Trilogie  ",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/3c/ba/51/5356092/1507-1/tsp20181026101115/Coffret-The-Dark-Knight-La-Trilogie-Edition-speciale-Fnac-Blu-Ray.jpg",
+        price: 24.99
+      },
+
+      {
+        id: 17,
+        name: "Jumanji : Next Level   ",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/6e/e0/b0/11591790/1507-1/tsp20200213164055/Jumanji-Next-Level-Blu-ray.jpg",
+        price: 24.99
+      },
+
+      {
+        id: 18,
+        name: "Rogue One  ",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/76/99/b2/11704694/1507-1/tsp20200219145141/Rogue-One-A-Star-Wars-Story-Blu-ray.jpg",
+        price: 15
+      },
+
+      {
+        id: 19,
+        name: "Le Roi Lion ",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/31/17/9b/10164017/1507-1/tsp20190919093439/Le-Roi-Lion-Blu-ray.jpg",
+        price: 15
+      },
+
+      {
+        id: 20,
+        name: "X-Men : Dark Phoenix ",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/00/7e/aa/11173376/1507-1/tsp20190826163514/X-Men-Dark-Phoenix-Blu-ray.jpg",
+        price: 15
+      },
+
+
     ]
   },
 
 
-  {
+  bd: {
     id: 4,
     title: "Bande Dessinée",
     routeName: "bande-dessinee",
@@ -108,10 +187,17 @@ const SHOP_DATA = [
         name: "Civil war",
         imageUrl: "https://static.fnac-static.com/multimedia/FR/images_produits/FR/Fnac.com/ZoomPE/1/4/7/9782809412741/tsp20130901165221/Guerre-civile.jpg",
         price: 20
+      },
+
+      {
+        id: 230,
+        name: "V pour Vendetta ",
+        imageUrl: "https://static.fnac-static.com/multimedia/Images/FR/NR/d4/c3/b1/11650004/1507-1/tsp20200507070245/V-pour-Vendetta-Edition-Black-Label.jpg",
+        price: 28
       }
     ]
   },
 
-];
+};
 
 export default SHOP_DATA;
