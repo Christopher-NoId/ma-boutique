@@ -3,10 +3,8 @@ import { addItemToCart, removeItemFromCart } from './cart.utils';
 
 const INITIAL_STATE = {
 
-  hidden: true, //dropdown invisible à l'arrivée sur site
-  cartItems: []//on veut ajouter des items dans cet array,
-  //on doit donc créer de nouvelles actions et action.types pour 
-  //que le reducer sache quel addItem action on fait.
+  hidden: true,
+  cartItems: []
 };
 
 const cartReducer = (state = INITIAL_STATE, action) => {

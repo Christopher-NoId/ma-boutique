@@ -1,10 +1,6 @@
 import { createSelector } from 'reselect';
 
-//const COLLECTION_ID_MAP = {
 
-//  bluray: 1,
-//  bd: 2
-//}
 const selectShop = state => state.shop;
 
 export const selectCollections = createSelector(

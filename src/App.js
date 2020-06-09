@@ -16,8 +16,7 @@ import { setCurrentUser } from './redux/user/user-actions'
 import { selectCurrentUser } from './redux/user/user.selecteurs';
 
 
-//Quand un user se log on veut conserver on veut stocker l'état son statut
-// dans App.state
+
 
 class App extends React.Component {
 
@@ -83,9 +82,7 @@ const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser
 })
 const mapDispatchToProps = dispatch => ({
-  //on dispatch  l'action SET_CURRENT_USER
 
-  setCurrentUser: user => dispatch(setCurrentUser(user))//dispatch permet à redux de savoir que l'on passe
-  //un objet action.On invoque setCurrentUser, avec le payload user
+  setCurrentUser: user => dispatch(setCurrentUser(user))
 })
 export default connect(mapStateToProps, mapDispatchToProps)(App);

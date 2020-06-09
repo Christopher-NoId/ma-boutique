@@ -15,6 +15,3 @@ const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
 );
 
 export default CartItem;
-
-//on destructure les propriétés dont on a besoin
-// et qui proviennent de notre item

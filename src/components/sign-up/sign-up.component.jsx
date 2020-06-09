@@ -6,8 +6,6 @@ import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
 import "./sign-up.styles.scss";
 
 class Signup extends React.Component {
-	//on a besoin de stocker ce que l'utilisateur tape dans le form input
-
 	constructor () {
 		super();
 

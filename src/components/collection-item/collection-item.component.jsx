@@ -4,7 +4,6 @@ import CustomButton from "../custom-button/custom-button.component";
 import { addItem } from "../../redux/cart/cart.actions";
 
 import "./collection-item.styles.scss";
-//ce fichier présente toutes les infos sur les articles vendus
 const CollectionItem = ({ item, addItem }) => {
 	const { name, price, imageUrl } = item;
 

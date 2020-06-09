@@ -20,7 +20,6 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = createStructuredSelector({
-	//on veut le nombre total d'item
 	itemCount: selectCartItemsCount
 });
 

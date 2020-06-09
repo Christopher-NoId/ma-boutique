@@ -7,7 +7,6 @@ import { PersistGate } from 'redux-persist/integration/react';
 import './index.css';
 import App from './App';
 import { store, persistor } from './redux/store';
-//en passant store dans Provider on a accès à redux dans l'app
 
 ReactDOM.render(
 
@@ -25,7 +24,3 @@ ReactDOM.render(
 
   document.getElementById('root')
 );
-
-//Provider est un component qui est le parent de tous les élements de
-//notre application, il donne accès à tous les éléments relatifs au store
-//

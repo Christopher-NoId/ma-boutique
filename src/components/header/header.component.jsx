@@ -13,9 +13,7 @@ import { selectCurrentUser } from "../../redux/user/user.selecteurs";
 
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 import "./header.styles.scss";
-//le header qui sera toujours fixé à la page visitée
 const Header = ({ currentUser, hidden }) => (
-	//notre header doit  connaître l'état de l'utilisateur
 	<div className='header'>
 		<Link className='logo-container' to='/'>
 			<Logo className='logo' />
@@ -45,8 +43,7 @@ const Header = ({ currentUser, hidden }) => (
 
 const mapStateToProps = createStructuredSelector({
 	currentUser: selectCurrentUser,
-	hidden: selectCartHidden // on veut le root reducer, dans ce root reducer
-	//on veut la valeur de user, qui nous donne userReducer, dont on veut currentUser
+	hidden: selectCartHidden
 });
 
 export default connect(mapStateToProps)(Header);
